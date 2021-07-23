@@ -6,6 +6,8 @@ The relationships are an `Author` has many `Books`, a `Genre` has many `Books`, 
 
 **Note**: You should draw your domain on paper or on a whiteboard _before you start coding_. Remember to identify a single source of truth for your data.
 
+Author -------< Book >-------- Genre
+
 ## Instructions
 
 To get started, run `bundle install` while inside of this directory.
@@ -59,43 +61,43 @@ Use ActiveRecord association macros to establish the relationships between the `
 
 #### Author
 
-- `Author#books`
+- `Author#books`✅
   - should return an array of all books written by author
-- `Author#genres`
+- `Author#genres`✅
   - should return an array of all the genres the author has written books for.
-- `Author#longest_book`
+- `Author#longest_book`✅
   - should return the longest book(most pages) the author has written
-- `Author#write_book(title, pages, description, genre)`
+- `Author#write_book(title, pages, description, genre)`✅
   - takes an instance of the `Genre` class as an argument, as well as all the attributes needed to create a new instance of the `Book` class.
   - creates a new book that is associated with the author and the genre passed as an argument
   - returns the book that was created
-- `Author.most_pages`
+- `Author.most_pages`✅
   - should return the author who has written the most total pages
 - **BONUS:**`Author#genre_count`
   - should return a hash where the keys are the genres the author has written books for, and the values are the number of books the author wrote for that genre. i.e. `{:mystery => 2, :biography => 1, :scifi => 4}`
 
 #### Book
 
-- `Book#author`
+- `Book#author`✅
   - should return the author the book belongs to
-- `Book#genre`
+- `Book#genre`✅
   - should return the genre the book belongs to
-- `Book.longest_book`
+- `Book.longest_book`✅
   - should return the book with highest number of pages
-- `Book.spine`
+- `Book#spine`✅
   - should return a string containing the books title, and it's authors name i.e. `"Harry Potter - JK Rowling"`
 
 #### Genre
 
-- `Genre#books`
+- `Genre#books`✅
   - should return an array of all books belonging to genre
-- `Genre#authors`
+- `Genre#authors`✅
   - should return an array of all authors who have written books belonging to this genre
-- `Genre#book_count`
+- `Genre#book_count`✅
   - returns the total number of books written for genre
-- `Genre#total_pages`
+- `Genre#total_pages`✅
   - returns the total pages written for that genre
-- `Genre.most_popular`
+- `Genre.most_popular`✅
   - returns the genre with the most books written for it
-- **BONUS:** `Genre.book_count`
+- **BONUS:** `Genre.book_count`✅
   - returns a hash where the keys are the names of the genres, and the values are the number of books written for that genre
