@@ -82,7 +82,7 @@ Use ActiveRecord association macros to establish the relationships between the `
   - should return the genre the book belongs to
 - `Book.longest_book`
   - should return the book with highest number of pages
-- `Book.spine`
+- `Book#spine`
   - should return a string containing the books title, and it's authors name i.e. `"Harry Potter - JK Rowling"`
 
 #### Genre
